@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../public/images/airbnblogo.png";
 import {SearchIcon} from "@heroicons/react/solid";
-import {GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon} from "@heroicons/react/solid";
+import {GlobeAltIcon, MenuIcon, UserCircleIcon} from "@heroicons/react/solid";
 
 const Header = () => {
     return (
