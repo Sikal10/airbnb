@@ -1,0 +1,42 @@
+[
+  {
+    "img": "/images/london.webp",
+    "location": "London",
+    "distance": "45-minute drive"
+  },
+  {
+    "img": "/images/manchester.webp",
+    "location": "Manchester",
+    "distance": "4.5-hour drive"
+  },
+  {
+    "img": "/images/liverpool.webp",
+    "location": "Liverpool",
+    "distance": "45-minute drive"
+  },
+  {
+    "img": "/images/york.webp",
+    "location": "York",
+    "distance": "4-hour drive"
+  },
+  {
+    "img": "/images/cardiff.webp",
+    "location": "Cardiff",
+    "distance": "30-minute drive"
+  },
+  {
+    "img": "/images/newquay.webp",
+    "location": "Newquay",
+    "distance": "6-hour drive"
+  },
+  {
+    "img": "/images/hove.webp",
+    "location": "Hove",
+    "distance": "8-hour drive"
+  },
+  {
+    "img": "/images/birkenhead.webp",
+    "location": "Birkenhead",
+    "distance": "2-hour drive"
+  }
+]
