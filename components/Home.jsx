@@ -3,12 +3,17 @@ import SmallCard from "./SmallCard";
 import MediumCard from "./MediumCard";
 import Card from "./Card";
 import outdoor from '../public/images/outdoore.webp'
+import Header from "./Header";
+import Footer from "./Footer";
+import Hero from "./Hero";
 
 const Home = ({exploreData, cardsData}) => {
     return (
         <>
             <Title title={"AirBnb"} />
 
+            <Header placeholder={"Start your search..."} />
+            <Hero />
             <main className={"max-w-7xl mx-auto px-8 sm:px-16"}>
                 <section className={"pt-6"}>
                     <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
@@ -33,6 +38,7 @@ const Home = ({exploreData, cardsData}) => {
                     description={"Wishlists curated by Airbnb."}
                 />
             </main>
+            <Footer />
         </>
     );
 };
