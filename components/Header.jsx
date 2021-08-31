@@ -20,7 +20,7 @@ const Header = ({placeholder}) => {
     }
 
     return (
-        <header className={"sticky top-0 z-50 bg-white shadow-md py-5 px-5 grid grid-cols-3 md:px-10"}>
+        <header className={"sticky bg-white top-0 z-50  shadow-md py-5 px-5 grid grid-cols-3 md:px-10"}>
             <div onClick={clickLogoHandler} className={"relative h-10 flex items-center cursor-pointer my-auto "}>
                 <Image src={logo} layout={"fill"} objectFit={"contain"} objectPosition={"left"} alt={""}/>
             </div>
