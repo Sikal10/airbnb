@@ -4,6 +4,7 @@ import Title from "./Title";
 import Header from "./Header";
 import Footer from "./Footer";
 import InfoCard from "./InfoCard";
+import Map from "./Map";
 
 const Search = ({searchResults}) => {
     const router = useRouter();
@@ -15,7 +16,7 @@ const Search = ({searchResults}) => {
 
     return (
         <>
-            <Title title={"Search Result"} />
+            <Title title={`${location} · Stays · Airbnb`} />
             <Header placeholder={`${location} | ${range} | ${guestNumber} guests`} />
             <main className="flex">
 
@@ -31,12 +32,15 @@ const Search = ({searchResults}) => {
                         <p className={"button"}>More Filters</p>
                     </div>
 
-                    {/*{searchResults.map(({img, location, title, description, star, price, total}, index) => <InfoCard key={index}  />)}*/}
-
                     <div className={"flex flex-col"}>
                         {searchResults.map((searchResult, index) => <InfoCard key={index} searchResult={searchResult}  />)}
                     </div>
 
+
+                </section>
+
+                <section className={"hidden lg:inline-flex lg:min-w-[500px]"}>
+                    <Map searchResults={searchResults} />
                 </section>
             </main>
             <Footer />
