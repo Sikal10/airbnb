@@ -2,7 +2,7 @@ import Title from "./Title";
 import SmallCard from "./SmallCard";
 import MediumCard from "./MediumCard";
 import Card from "./Card";
-import outdoor from '../public/images/outdoore.webp'
+import hosting from "../public/images/airbnb-babe.webp"
 import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -10,7 +10,7 @@ import Hero from "./Hero";
 const Home = ({exploreData, cardsData}) => {
     return (
         <>
-            <Title title={"AirBnb"} />
+            <Title title={"AirBnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & ..."} />
 
             <Header placeholder={"Start your search..."} />
             <Hero />
@@ -32,10 +32,10 @@ const Home = ({exploreData, cardsData}) => {
                 </section>
 
                 <Card
-                    img={outdoor}
-                    title={"The Greatest Outdoors"}
-                    buttonText={"Get Inspired"}
-                    description={"Wishlists curated by Airbnb."}
+                    img={hosting}
+                    title={"Try hosting"}
+                    buttonText={"Learn more"}
+                    description={"Earn extra income and unlock new opportunities by sharing your space."}
                 />
             </main>
             <Footer />

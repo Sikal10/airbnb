@@ -1,13 +1,15 @@
 import '../styles/globals.css'
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router"
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 
 const progress = new ProgressBar({
-    size: 4,
+    size: 5,
     color: "#FE595E",
     className: "z-50",
     delay: 100
-})
+});
 
 Router.events.on("routeChangeStart", progress.start);
 Router.events.on("routeChangeComplete", progress.finish);

@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className={"grid grid-cols-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-y-10 py-14 px-32 bg-gray-100"}>
+        <div className={"grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-10 py-14 px-32 bg-gray-100"}>
             <div className={"space-y-4 text-sm text-gray-800"}>
                 <h5 className={"font-bold"}>ABOUT</h5>
                 <p> How Airbnb works</p>
@@ -15,7 +15,6 @@ const Footer = () => {
                 <p> Airbnb for Work</p>
                 <p> Made possible by Hosts</p>
                 <hr className={"md:hidden"}/>
-
             </div>
 
             <div className={"space-y-4 text-sm text-gray-800"}>
