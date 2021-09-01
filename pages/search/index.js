@@ -1,5 +1,5 @@
 import Search from "../../components/Search";
-import {API_URL} from "../../config";
+import {searchResults} from "../../data/data";
 
 const SearchPage = ({searchResults}) => {
     return (
@@ -10,9 +10,6 @@ const SearchPage = ({searchResults}) => {
 export default SearchPage;
 
 export const getServerSideProps = async (context) => {
-    const res = await fetch(`${API_URL}/api/search`);
-    const searchResults = await res.json();
-
     return {
         props: {
             searchResults

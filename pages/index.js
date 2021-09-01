@@ -1,5 +1,6 @@
 import Home from "../components/Home";
-import {API_URL} from "../config";
+import {exploreData} from "../data/data";
+import {cardsData} from "../data/data";
 
 export default function HomePage({exploreData, cardsData}) {
   return (
@@ -8,11 +9,6 @@ export default function HomePage({exploreData, cardsData}) {
 }
 
 export const getStaticProps = async () => {
-  const response = await fetch(`${API_URL}/api/explore`);
-  const exploreData = await response.json();
-
-  const res = await fetch(`${API_URL}/api/explore/cardsdata`);
-  const cardsData = await res.json();
 
   return {
     props: {
