@@ -10,6 +10,7 @@ const SearchPage = ({searchResults}) => {
 export default SearchPage;
 
 export const getServerSideProps = async (context) => {
+
     return {
         props: {
             searchResults
